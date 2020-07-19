@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="container" >
+            <h1>Bitcoin Price</h1>
+            <p class="time">Time Updated: {{tree['time']['updated']}} </p>                    
+       
+            {% for  key,value in tree['bpi'].items() recursive %}
+            <div class="info">
+            <h3 class="heading">
+                Bitcoin Price details in :{{ key }}
+            </h3>
+            <h4 >
+              
+                    {% for key, val in value.items() recursive %}
+                    {% if key != "symbol"  %}
+                    <p class="list-style">
+                        {{key}} : {{val}}
+                    </p>
+                    {% endif %}
+                    {% endfor%}
+            
+            </h4>
+            </div>
+            {% endfor%}
+        
+    </div>
+{% endblock %}
+
