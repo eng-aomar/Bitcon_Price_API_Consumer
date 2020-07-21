@@ -42,8 +42,6 @@ body {
         }
         
  .heading {
-        position: relative;
-        display: inline-block;
         width: 100%;
         line-height: 2em;
         background-color: #3F89A5;
@@ -51,6 +49,7 @@ body {
         color: white;
         text-indent: 0.5em;
         font-weight: bold;
+         margin-top: 0px;
        
     }
 
@@ -62,7 +61,6 @@ body {
     }
      .info {
        width:800px;
-       height: 300px;
         border: 1px dashed #ccc;
         margin: 20px;
         background: #f9f9f9;
