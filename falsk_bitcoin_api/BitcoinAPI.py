@@ -1,6 +1,6 @@
 import requests
 class Bitcoin:
-   
+       """ This Class reads the API and returns a json response """
     API_URL = 'https://api.coindesk.com/v1/bpi/currentprice.json'
     def __init__(self):
         pass
